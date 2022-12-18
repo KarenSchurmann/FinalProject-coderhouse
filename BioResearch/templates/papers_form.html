@@ -1,0 +1,20 @@
+{% extends 'templates.html' %}
+{% load static %}
+
+
+{% block title %}
+<h1>Add a new paper</h1>
+{% endblock %}
+
+
+{% block content %}
+<form action="{% url 'bioresearch-form' %}" method="post"> {% csrf_token %}
+
+    {{ form.as_div }}
+
+    
+    <input type="submit" value="save" class="btn btn-success">
+    
+</form>
+{% endblock %}
+

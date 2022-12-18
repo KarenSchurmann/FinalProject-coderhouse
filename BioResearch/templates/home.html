@@ -1,0 +1,18 @@
+{% extends 'templates.html' %}
+{% load static %}
+
+
+{% block title %}
+<h1>Welcome Message</h1>
+{% endblock %}
+
+{% block content %}
+<h2>
+Welcome to the website for Biochemistry’s Office of Research. This site is designed to serve your needs, whether you are looking for more details about the research activities at our centres, or in search of resources to support your interests.</h2>
+{% for paper in papers %}
+
+<p>{{ paper }}</p>
+
+
+{% endfor %}
+{% endblock %}

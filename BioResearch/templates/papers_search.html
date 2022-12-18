@@ -1,0 +1,16 @@
+{% extends 'templates.html' %}
+{% load static %}
+
+
+{% block title %}
+<h1>Search for papers</h1>
+{% endblock %}
+
+
+{% block content %}
+<form action="{% url 'biochemistry-index' %}" method="get">
+    <input type="text" name="title" author="author">
+    <input type="submit" value="Search paper" class="btn btn-primary">p
+</form>
+
+{% endblock %}

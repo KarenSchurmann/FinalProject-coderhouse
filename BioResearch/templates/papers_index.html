@@ -1,0 +1,17 @@
+{% extends 'templates.html' %}
+{% load static %}
+
+
+{% block title %}
+<h1>List of biochemistry papers</h1>
+{% endblock %}
+
+
+{% block content %}
+{% for paper in papers %}
+
+<p>{{ paper }}</p>
+
+
+{% endfor %}
+{% endblock %}
